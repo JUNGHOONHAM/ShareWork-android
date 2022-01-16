@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:tag="@string/click_marker"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_toStartOf="@id/cancel"
+    android:layout_toLeftOf="@id/cancel"
+    android:background="@android:color/transparent"
+    android:padding="8dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일거리 리스트"
+        android:textColor="#000000"
+        android:paddingTop="4dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="0dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:src="@drawable/ic_close_black_24dp" />
+</RelativeLayout>

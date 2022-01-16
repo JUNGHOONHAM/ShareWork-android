@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeWorkerFragment"
+        android:icon="@drawable/ic_bottom_home"
+        android:title="홈"
+        />
+
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_bottom_history"
+        android:title="지원내역"
+        />
+
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_bottom_chat"
+        android:title="채팅"
+        />
+
+    <item
+        android:id="@+id/notificationFragment"
+        android:icon="@drawable/ic_bottom_notification"
+        android:title="알림"
+        />
+
+    <item
+        android:id="@+id/myPageFragment"
+        android:icon="@drawable/ic_bottom_mypage"
+        android:title="마이페이지"
+        />
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="#00000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_radius_10_fill_ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_view_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:text="@string/title_notice"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:id="@+id/text_view_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#919191" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_ok"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_view_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_ok"
+                    android:textSize="14dp"
+                    android:textColor="#2cc3c3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

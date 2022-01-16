@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.hampson.sharework.ui.worker.home.job_list.BottomSheetJobPagedListAdapter" />
+    </data>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="24dp" >
+
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_marginRight="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="원룸 이사"
+                                android:textColor="#000000"
+                                android:maxLines="2"
+                                android:ellipsize="end"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewJobType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="하루"
+                                android:textColor="#656565"
+                                android:background="@drawable/background_radius_20_line_64d8d1"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_marginRight="8dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textViewJobDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:text="10월 30일"
+                                android:layout_marginRight="4dp"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/textViewPeriodType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="하루"
+                                android:textColor="#656565"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_marginRight="8dp"
+                                android:visibility="invisible"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textViewJobTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:text="15:00 ~ 20:00"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewPayType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="일급"
+                                android:textColor="#2cc3c3"
+                                android:background="@drawable/background_radius_20_line_64d8d1"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_marginRight="8dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textViewPay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#2cc3c3"
+                                android:textSize="14sp"
+                                android:text="100,000원"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:background="#eaeaea"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+</layout>

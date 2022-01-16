@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeWorkerFragment">
+
+    <fragment
+        android:id="@+id/homeWorkerFragment"
+        android:name="com.hampson.sharework.ui.worker.home.HomeWorkerFragment"
+        android:label="fragment_home_worker"
+        tools:layout="@layout/fragment_home_worker" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.hampson.sharework.ui.worker.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.hampson.sharework.ui.worker.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.hampson.sharework.ui.worker.notice.NoticeFragment"
+        android:label="fragment_notice"
+        tools:layout="@layout/fragment_notice" />
+    <fragment
+        android:id="@+id/myPageFragment"
+        android:name="com.hampson.sharework.ui.worker.mypage.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" />
+</navigation>

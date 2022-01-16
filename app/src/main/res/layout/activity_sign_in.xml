@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="sign_in"
+            type="com.hampson.sharework.ui.membership.sign_in.SignInActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:toolbar="@{1}" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:clickable="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical"
+                android:paddingTop="32dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="@string/phone_number"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextPhoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="@string/message_write_phone_number"
+                        android:background="@drawable/background_focus_in_64d8d1_focus_out_dddddd"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textSize="14dp"
+                        android:inputType="number"
+                        android:textColor="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutCertificationButton"
+                        android:layout_width="80dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/background_radius_6_line_64d8d1">
+
+                        <TextView
+                            android:id="@+id/textViewCertification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="@string/certification"
+                            android:textColor="#64d8d1"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCertification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/certification_number"
+                        android:layout_marginBottom="10dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editTextCertification"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:hint="@string/message_write_certification"
+                            android:background="@drawable/background_focus_in_64d8d1_focus_out_dddddd"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textViewCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#dd2525"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:clickable="false"
+            android:background="#afafaf">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_sign_up"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

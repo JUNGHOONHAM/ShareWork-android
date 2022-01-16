@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.hampson.sharework.ui.worker.MainActivity" />
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".ui.WorkerMainActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/myNavHost"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/worker_nav_graph" />
+        </LinearLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:menu="@menu/worker_bottom_nav_menu"
+            app:itemHorizontalTranslationEnabled="false"
+            app:labelVisibilityMode="labeled"
+            app:itemBackground="@color/white"
+            android:background="#ffffff"
+            />
+
+    </LinearLayout>
+</layout>

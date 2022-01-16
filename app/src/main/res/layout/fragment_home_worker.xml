@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fragment"
+            type="com.hampson.sharework.ui.worker.home.HomeWorkerFragment" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textViewError"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="연결에 실패했습니다."
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/background_focus_in_64d8d1_focus_out_ffffff"
+                android:elevation="5dp"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="8dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/title_search_location"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:textColor="#999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+                <com.leinardi.android.speeddial.SpeedDialView
+                    android:id="@+id/speedDial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:theme="@style/fab_style"
+                    app:sdMainFabClosedSrc="@drawable/ic_baseline_add_circle_24" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingMyLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/ic_baseline_location_on_24" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="15dp">
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
